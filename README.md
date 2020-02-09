@@ -36,4 +36,6 @@ printSymbol - Displays a character on the display. The first parameter takes a p
 You can use ready-made characters from an object of class TM1637 or create your own. 
 Ready characters are called like this: tm1637.SYMBOLS.symbol_%symbol_name% (
 for example: tm1637.SYMBOLS.symbol_A).  
-Available symbols: 0-9, A,b,C,d,E,F.
+Available symbols: 0-9, A,b,C,d,E,F.  
+  
+clearDisplay - Removes all characters from the display.
