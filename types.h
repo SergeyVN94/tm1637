@@ -2,7 +2,7 @@
 
 typedef unsigned char uint8_t;
 
-struct SEGMENTS {
+struct Segments {
     const uint8_t A;
     const uint8_t B;
     const uint8_t C;
@@ -13,7 +13,7 @@ struct SEGMENTS {
     const uint8_t POINT;
 };
 
-struct SYMBOLS {
+struct Symbols {
     const uint8_t symbol_0;
     const uint8_t symbol_1;
     const uint8_t symbol_2;

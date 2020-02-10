@@ -7,35 +7,8 @@
 
 class TM1637 {
    public:
-    SEGMENTS SEG = {
-        A : 0x01,
-        B : 0x02,
-        C : 0x04,
-        D : 0x08,
-        E : 0x10,
-        F : 0x20,
-        G : 0x40,
-        POINT : 0x80,
-    };
-
-    SYMBOLS SYMBOLS = {
-        symbol_0 : 0x3F,
-        symbol_1 : 0x06,
-        symbol_2 : 0x5B,
-        symbol_3 : 0x4F,
-        symbol_4 : 0x66,
-        symbol_5 : 0x6D,
-        symbol_6 : 0x7D,
-        symbol_7 : 0x07,
-        symbol_8 : 0x7F,
-        symbol_9 : 0x6F,
-        symbol_A : 0x77,
-        symbol_C : 0x39,
-        symbol_E : 0x79,
-        symbol_F : 0x71,
-        symbol_b : 0x7C,
-        symbol_d : 0x5E,
-    };
+    static Segments SEGMENTS;
+    static Symbols SYMBOLS;
 
    public:
     TM1637(uint8_t pinCLK, uint8_t pinDIO);
