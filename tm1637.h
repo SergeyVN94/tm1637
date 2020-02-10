@@ -1,7 +1,11 @@
 #ifndef TM1637_H
 #define TM1637_H
 
+#if ARDUINO >= 100
 #include <Arduino.h>
+#else
+#include <WProgram.h>
+#endif
 
 #include "types.h"
 
