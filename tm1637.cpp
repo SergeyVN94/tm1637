@@ -22,16 +22,18 @@ Segments TM1637::SEGMENTS = {
 };
 
 Symbols TM1637::SYMBOLS = {
-    symbol_0 : 0x3F,
-    symbol_1 : 0x06,
-    symbol_2 : 0x5B,
-    symbol_3 : 0x4F,
-    symbol_4 : 0x66,
-    symbol_5 : 0x6D,
-    symbol_6 : 0x7D,
-    symbol_7 : 0x07,
-    symbol_8 : 0x7F,
-    symbol_9 : 0x6F,
+    numbers : {
+        0x3F,
+        0x06,
+        0x5B,
+        0x4F,
+        0x66,
+        0x6D,
+        0x7D,
+        0x07,
+        0x7F,
+        0x6F,
+    },
     symbol_A : 0x77,
     symbol_C : 0x39,
     symbol_E : 0x79,

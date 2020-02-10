@@ -20,10 +20,10 @@ void setup() {
 }
 
 void loop() {
-    tm1637.printSymbol(0, TM1637::SYMBOLS.symbol_0);
-    tm1637.printSymbol(1, TM1637::SYMBOLS.symbol_1);
-    tm1637.printSymbol(2, TM1637::SYMBOLS.symbol_2);
-    tm1637.printSymbol(3, TM1637::SYMBOLS.symbol_3);
+    tm1637.printSymbol(0, TM1637::SYMBOLS.symbol_A);
+    tm1637.printSymbol(1, TM1637::SYMBOLS.symbol_F);
+    tm1637.printSymbol(2, TM1637::SYMBOLS.numbers[7]);
+    tm1637.printSymbol(3, TM1637::SYMBOLS.numbers[3]);
     delay(100);
 }
 ```
@@ -36,7 +36,8 @@ setBright - Setting the brightness of the glow, where 0 - the display is off, 8 
 printSymbol - Displays a character on the display. The first parameter takes a position from 0 to 3. The second parameter takes an unsigned integer. 
 You can use ready-made characters from an object of class TM1637 or create your own. 
 Ready characters are called like this: TM1637::SYMBOLS.symbol_%symbol_name% (
-for example: TM1637::SYMBOLS.symbol_A).  
+for example: TM1637::SYMBOLS.symbol_A) or TM1637::SYMBOLS.numbers[number] (
+for example: TM1637::SYMBOLS.numbers[5]).  
 Available symbols: 0-9, A,b,C,d,E,F.  
   
 clearDisplay - Removes all characters from the display.

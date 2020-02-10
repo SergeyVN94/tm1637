@@ -14,16 +14,7 @@ struct Segments {
 };
 
 struct Symbols {
-    const uint8_t symbol_0;
-    const uint8_t symbol_1;
-    const uint8_t symbol_2;
-    const uint8_t symbol_3;
-    const uint8_t symbol_4;
-    const uint8_t symbol_5;
-    const uint8_t symbol_6;
-    const uint8_t symbol_7;
-    const uint8_t symbol_8;
-    const uint8_t symbol_9;
+    const uint8_t numbers[10];
     const uint8_t symbol_A;
     const uint8_t symbol_C;
     const uint8_t symbol_E;
