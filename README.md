@@ -1,9 +1,8 @@
-## tm1637 library
+# TM1637 library
 
-# Install
-git clone https://github.com/SergeyVN94/tm1637-modul-lib.git
+Library for tm1637 driver  
 
-# Using
+# Example
 
 main.ino  
 ```
@@ -28,16 +27,17 @@ void loop() {
 }
 ```
 
-# Class Methods TM1637  
-begin - Loading settings into the module.  
+# Using  
+
+* `begin` - Loading settings into the module.  
   
-setBright - Setting the brightness of the glow, where 0 - the display is off, 8 - maximum brightness.  
+* `setBright` - Setting the brightness of the glow, where 0 - the display is off, 8 - maximum brightness.  
   
-printSymbol - Displays a character on the display. The first parameter takes a position from 0 to 3. The second parameter takes an unsigned integer. 
+* `printSymbol` - Displays a character on the display. The first parameter takes a position from 0 to 3. The second parameter takes an unsigned integer. 
 You can use ready-made characters from an object of class TM1637 or create your own. 
 Ready characters are called like this: TM1637::SYMBOLS.symbol_%symbol_name% (
 for example: TM1637::SYMBOLS.symbol_A) or TM1637::SYMBOLS.numbers[number] (
 for example: TM1637::SYMBOLS.numbers[5]).  
 Available symbols: 0-9, A,b,C,d,E,F.  
   
-clearDisplay - Removes all characters from the display.
+* `clearDisplay` - Removes all characters from the display.
