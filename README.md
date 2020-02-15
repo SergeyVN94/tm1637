@@ -1,6 +1,6 @@
-# TM1637 library
+# Arduino TM1637 library
 
-Library for tm1637 driver  
+Arduino Library for tm1637 driver  
 
 # Example
 
