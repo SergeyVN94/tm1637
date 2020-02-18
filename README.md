@@ -1,6 +1,6 @@
-# TM1637 library
+# Arduino TM1637 library
 
-Library for tm1637 driver  
+Arduino Library for tm1637 driver  
 
 # Example
 
@@ -35,10 +35,9 @@ void loop() {
   
 * `printSymbol` - Displays a character on the display. The first parameter takes a position from 0 to 3. The second parameter takes an unsigned integer. 
 You can use ready-made characters from an object of class TM1637 or create your own. 
-Ready characters are called like this: TM1637::SYMBOLS.symbol_%symbol_name% (
-for example: TM1637::SYMBOLS.symbol_A) or TM1637::SYMBOLS.numbers[number] (for example: TM1637::SYMBOLS.numbers[5]).  
+Ready characters are called like this: TM1637::SYMBOLS.symbol_%symbol_name% (example: TM1637::SYMBOLS.symbol_A) or TM1637::SYMBOLS.numbers[number] (example: TM1637::SYMBOLS.numbers[5]).  
 Available symbols: 0-9, A,b,C,d,E,F.
-  
+
 * `clearDisplay` - Removes all characters from the display.  
 
 ### Custom symbol
