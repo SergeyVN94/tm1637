@@ -46,7 +46,15 @@ void TM1637::setBright(uint8_t bright) {
     if (bright < 0) bright = 0;
     if (bright > 8) bright = 8;
 
-    this->_sendCommand(this->DISPLAY_BRIGHT[bright]);
+    // 0x80 - display off
+    uint8_t brightCommand = 0x80;
+
+    if (bright > 1) {
+        // 0x88 - minimum brightness
+        brightCommand = 0x87 + bright;
+    }
+    
+    this->_sendCommand(bright);
 }
 
 void TM1637::begin() {

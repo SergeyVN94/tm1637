@@ -28,9 +28,6 @@ class TM1637 {
 
     // normal mode, fixed address, write data to display register
     const uint8_t DISPLAY_CONFIGD = 0x44;
-    const uint8_t DISPLAY_BRIGHT[9] = {
-        0x80, 0x88, 0x89, 0x8A, 0x8B, 0x8C, 0x8D, 0x8E, 0x8F,
-    };
 
    private:
     void _CLK(uint8_t state);
